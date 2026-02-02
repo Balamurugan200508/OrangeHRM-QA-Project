@@ -1,0 +1,22 @@
+Test Case ID, Scenario, Steps, Test Data, Expected Result, Actual Result, Status
+Test Case ID,Scenario,Steps,Test Data,Expected Result,Actual Result,Status
+TC_01,Valid Login,1. Enter Username 2. Enter Password 3. Click Login,Admin / admin123,Dashboard should load,Pass,Success
+TC_02,Invalid Password,1. Enter Username 2. Enter Wrong Password 3. Click Login,Admin / wrong123,Error message: "Invalid credentials",Pass,Success
+TC_03,Empty Fields,1. Leave Username/Password empty 2. Click Login,(Empty),Validation message: "Required",Pass,Success
+TC_04,Navigation to PIM,1. Login 2. Click 'PIM' on sidebar,N/A,PIM Employee List should display,Pass,Success
+TC_05,Add Employee Form,1. Go to PIM 2. Click 'Add' 3. Enter names 4. Save,John Doe,Employee record saved successfully,Pass,Success
+TC_06,Logout Functionality,Click User Profile > Click Logout,N/A,Redirected to Login Page,Pass,Success
+TC_07,Search Employee,Enter Employee Name in PIM search,Charlie,Employee details appear in list,Pass,Success
+TC_08,Invalid Username,Enter Wrong Username + Correct Password,FakeUser / admin123,Error: "Invalid credentials",Pass,Success
+TC_09,Password Masking,Type in the Password field,admin123,Characters should be hidden (dots),Pass,Success
+TC_10,Case Sensitivity,Enter Username in ALL CAPS,ADMIN,Login should fail or handle case correctly,Pass,Success
+TC_11,Add User - Admin,Go to Admin > Add User > Save,New Admin Info,User added to system,Pass,Success
+TC_12,Delete Employee,Select Employee > Click Delete,N/A,Confirmation popup appears,Pass,Success
+TC_13,Dashboard Widget,Check if 'Time at Work' widget is visible,N/A,Widget displays on Dashboard,Pass,Success
+TC_14,Edit My Info,Go to My Info > Change Nickname > Save,New Nickname,Profile updated successfully,Pass,Success
+TC_15,Leave Request,Go to Leave > Apply > Fill Form > Submit,Date range,Request submitted status,Pass,Success
+TC_16,Mandatory Fields,Try to save PIM form without Last Name,(Leave empty),Error: "Required",Pass,Success
+TC_17,Invalid File Upload,Upload a .txt file as Profile Picture,document.txt,Error: "File type not supported",Pass,Success
+TC_18,Forgot Password Link,Click 'Forgot your password?',N/A,Redirected to Reset Password page,Pass,Success
+TC_19,Session Timeout,Stay inactive for 30 minutes,N/A,System should prompt for re-login,Pass,Success
+TC_20,Browser Back Button,Log out then click Browser Back,N/A,User remains on login/not logged in,Pass,Success
