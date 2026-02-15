@@ -24,5 +24,5 @@ This repository contains a comprehensive testing suite for the **OrangeHRM** web
 3. **Automation:** The script in `06_Automation_Task` can be run using `python login_test.py` (requires Selenium and ChromeDriver).
 
 ## 👤 Author
-* **Name:** [Your Name]
+* **Name:** [Balamurugan S]
 * **Project Date:** February 2026
